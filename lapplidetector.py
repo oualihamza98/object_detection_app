@@ -28,17 +28,5 @@ if image is not None:
     st.write(f'<p style="font-size:40px; color:#060606; background-color:#f1f2f6; padding:1px;">Here is what we detected in your image:<br>{annote}</p>', unsafe_allow_html=True)
     st.image(results[0].plot())
 
-    # Instructions pour sauvegarder l'image sur le disque
-    result_file = 'result.jpg'
-    results[0].save(filename=result_file)  # Sauvegarder l'image résultante
-
-    # the download button
-    st.download_button(
-        label="Download the image with the detections",
-        data=open(result_file, 'rb').read(),
-        file_name=result_file,
-        mime='image/jpeg'
-    )
-
 
 
