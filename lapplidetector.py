@@ -20,7 +20,7 @@ if image is not None:
     model = YOLO("yolov8s.pt")
     print("-----------")
     # Utiliser le modèle pour prédire sur l'image téléchargée
-    results = model(source=Image.open(image), save=True)
+    results = model(source=Image.open(image))
   # Récupérer la sortie imprimée
     
     annote=results[0].verbose()
