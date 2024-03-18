@@ -3,3 +3,6 @@ numpy
 streamlit==1.22.0
 ultralytics==8.0.98
 Pillow==9.5.0
+streamlit-webrtc
+
+opencv-python-headless<4.3
