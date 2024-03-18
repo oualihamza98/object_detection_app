@@ -7,7 +7,7 @@ from PIL import Image
 import sys
 from utils import set_background
 
-set_background('AdobeStock_225120346_Preview.jpeg')
+#set_background('AdobeStock_225120346_Preview.jpeg')
 
 st.write('<p style="font-size:70px; color:#060606; background-color:#f1f2f6; padding:3px;">Image Object Detection</p>', unsafe_allow_html=True)
 st.write('<p style="font-size:40px; color:#060606; background-color:#f1f2f6; padding:3px;">Please upload an image</p>', unsafe_allow_html=True)
@@ -24,7 +24,7 @@ if image is not None:
   # Récupérer la sortie imprimée
     
     annote=results[0].verbose()
-    print("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*",annote)
+    
     st.write(f'<p style="font-size:40px; color:#060606; background-color:#f1f2f6; padding:1px;">Here is what we detected in your image:<br>{annote}</p>', unsafe_allow_html=True)
     st.image(results[0].plot())
 
