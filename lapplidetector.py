@@ -4,8 +4,8 @@ from ultralytics import YOLO
 import base64
 import cv2
 from PIL import Image
-import sys
 from utils import set_background
+
 
 set_background('AdobeStock_225120346_Preview.jpeg')
 
