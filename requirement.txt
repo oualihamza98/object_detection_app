@@ -1,5 +1,5 @@
 streamlit
 numpy
-ultralytics
+git+https://github.com/ultralytics/ultralytics.git@main
 opencv-python
 Pillow
